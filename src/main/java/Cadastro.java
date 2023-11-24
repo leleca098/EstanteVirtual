@@ -90,7 +90,6 @@ public class Cadastro extends javax.swing.JFrame {
         jButton1.setText("Criar");
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ROSEMARYAUGUSTO\\Downloads\\icons8-retornar-15.png")); // NOI18N
         jButton2.setText("Voltar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
