@@ -8,16 +8,21 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.util.Properties;
 
 /**
  *
- * @author 823135401
+ * @author erick
  */
-public class ConnectionFactory {
+public class Conexao {
+
+    public static PreparedStatement prepareStatement(String sql) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
    private String host, port, db, user, password;
     
-    public ConnectionFactory (java.util.Properties properties){
+    public Conexao (java.util.Properties properties){
         this(
             properties.getProperty("DB_HOST"),
             properties.getProperty("DB_PORT"),
@@ -26,7 +31,7 @@ public class ConnectionFactory {
             properties.getProperty("DB_PASSWORD")
         );
     }
-    public ConnectionFactory(
+    public Conexao(
         String host,
         String port,
         String db,
@@ -62,7 +67,7 @@ public class ConnectionFactory {
         final String DB_NAME = properties.getProperty("DB_NAME");
         final String DB_USER = properties.getProperty("DB_USER");
         final String DB_PASSWORD = properties.getProperty("DB_PASSWORD");
-        var fabrica = new ConnectionFactory(
+        var fabrica = new Conexao(
             DB_HOST, 
             DB_PORT, 
             DB_NAME, 
