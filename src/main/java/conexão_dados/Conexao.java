@@ -20,6 +20,10 @@ public class Conexao {
     public static PreparedStatement prepareStatement(String sql) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
+    public static Connection obterConexao() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
    private String host, port, db, user, password;
     
     public Conexao (java.util.Properties properties){
