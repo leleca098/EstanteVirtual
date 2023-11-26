@@ -9,29 +9,28 @@ import java.util.Properties;
  *
  * @author erick
  */
-public class Cad_userDAO {
+public class LivroDAO {
     private Properties properties;
     
-    public Cad_userDAO(Properties properties) {
+    public LivroDAO(Properties properties) {
     this.properties = properties;
 }
-        public void cadastrarUsuario(Cad_user u) {
+        public void cadastrarLivro(Livro u) {
         //1. Construir uma fábrica de conexões
         var fabrica = new Conexao(properties);
 
         //2. Estabelecer uma conexão com o banco
         try (var conexao = fabrica.conectar()) {
             //3. Especificar o comando SQL
-            String INSERT_QUERY = "INSERT INTO usuario VALUES (?, ?, ?, ?, ?, ?)";
+            String INSERT_QUERY = "INSERT INTO livro VALUES (?, ?, ?, ?, ?)";
 
             //4. Substituir os eventuais placeholders
             try (var ps = conexao.prepareStatement(INSERT_QUERY)) {
-                ps.setInt(1, u.getCpf());  // Substitua pelo método adequado para obter o valor de coluna1
-                ps.setString(2, u.getNome());  // Substitua pelo método adequado para obter o valor de coluna2
-                ps.setString(3, u.getEmail());  // Substitua pelo método adequado para obter o valor de coluna3
-                ps.setInt(4, u.getIdade());  // Substitua pelo método adequado para obter o valor de coluna1
-                ps.setString(5, u.getSexo());  // Substitua pelo método adequado para obter o valor de coluna2
-                ps.setString(6, u.getSenha());  // Substitua pelo método adequado para obter o valor de coluna3
+                ps.setInt(1, u.getId());  // Substitua pelo método adequado para obter o valor de coluna1
+                ps.setString(2, u.getTitulo());  // Substitua pelo método adequado para obter o valor de coluna2
+                ps.setString(3, u.getAutor());  // Substitua pelo método adequado para obter o valor de coluna3
+                ps.setInt(4, u.getLancamento());  // Substitua pelo método adequado para obter o valor de coluna4
+                //ps.setInt(5, u.getNota());  // Substitua pelo método adequado para obter o valor de coluna5
 
                 //5. Executar o comando
                 ps.executeUpdate();
@@ -44,11 +43,5 @@ public class Cad_userDAO {
             // Tratar exceções, se necessário
         }
     }
+
 }
-   
-    
-   
-        
-    
-
-

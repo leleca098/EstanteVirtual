@@ -11,22 +11,27 @@ package Usuario;
  * @author erick
  */
 public class Cad_user {
-    private int id;
+    private int cpf;
     private String nome;
     private String email;
     private int idade;
+    private String sexo;
+    private String senha;
     
-    public Cad_user(int id, String nome, String email, int idade) {
- this.id = id;
+    
+    public Cad_user(int cpf, String nome, String email, int idade, String sexo, String senha) {
+ this.cpf = cpf;
  this.nome = nome;
  this.email = email;
  this.idade = idade;
+ this.sexo = sexo;
+ this.senha = senha;
  }
- public int getId() {
- return id;
+ public int getCpf() {
+ return cpf;
  }
- public void setId(int id) {
- this.id = id;
+ public void setCpf(int cpf) {
+ this.cpf = cpf;
  }
  
 public String getNome() {
@@ -46,5 +51,17 @@ public String getNome() {
  }
  public void setIdade(int idade) {
  this.idade = idade;
+ }
+ public String getSexo() {
+ return sexo;
+ }
+ public void setSexo(String sexo) {
+ this.sexo = sexo;
+ }
+ public String getSenha() {
+ return senha;
+ }
+ public void setSenha(String senha) {
+ this.senha = senha;
  }
 }
