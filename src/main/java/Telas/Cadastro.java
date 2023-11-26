@@ -85,6 +85,7 @@ public class Cadastro extends javax.swing.JFrame {
         sexoComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Masculino", "Feminino" }));
 
         backButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        backButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/icons8-retornar-15.png"))); // NOI18N
         backButton.setText("Voltar");
         backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,6 +94,7 @@ public class Cadastro extends javax.swing.JFrame {
         });
 
         criarButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        criarButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/icons8-seta-longa-à-direita-15.png"))); // NOI18N
         criarButton.setText("Criar");
         criarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

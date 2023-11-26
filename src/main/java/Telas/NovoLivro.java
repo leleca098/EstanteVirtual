@@ -57,12 +57,15 @@ public class NovoLivro extends javax.swing.JFrame {
         jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/icons8-livro-15.png"))); // NOI18N
         jLabel1.setText("Título");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/icons8-homem-escritor-15.png"))); // NOI18N
         jLabel2.setText("Autor");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/icons8-calendário-15.png"))); // NOI18N
         jLabel3.setText("Ano de publicação");
 
         tituloTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -77,9 +80,11 @@ public class NovoLivro extends javax.swing.JFrame {
         publiTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/icons8-senha-1-15.png"))); // NOI18N
         jLabel5.setText("ID");
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/icons8-lupa-15.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -87,6 +92,7 @@ public class NovoLivro extends javax.swing.JFrame {
         });
 
         salvarButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        salvarButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/icons8-salvar-15.png"))); // NOI18N
         salvarButton.setText("Salvar");
         salvarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,7 +118,7 @@ public class NovoLivro extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(173, 173, 173)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(tituloTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)
+                                            .addComponent(tituloTextField)
                                             .addComponent(autorTextField)))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)

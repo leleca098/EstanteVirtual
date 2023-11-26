@@ -50,6 +50,7 @@ public class TelaAdmin extends javax.swing.JFrame {
         jTextField2.setText("Cadastrar");
 
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/icons8-seta-longa-à-direita-15 (1).png"))); // NOI18N
         jButton3.setText("Próximo");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,6 +59,7 @@ public class TelaAdmin extends javax.swing.JFrame {
         });
 
         jButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/icons8-retornar-15 (1).png"))); // NOI18N
         jButton4.setText("Voltar");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,6 +67,7 @@ public class TelaAdmin extends javax.swing.JFrame {
             }
         });
 
+        cadButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/icons8-adicionar-usuário-masculino-64.png"))); // NOI18N
         cadButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cadButtonActionPerformed(evt);
@@ -89,6 +92,8 @@ public class TelaAdmin extends javax.swing.JFrame {
                 .addComponent(cadButton, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/livros.png"))); // NOI18N
 
         jDesktopPane2.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 

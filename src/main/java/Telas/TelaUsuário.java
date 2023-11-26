@@ -45,6 +45,7 @@ public class TelaUsuário extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/livros.png"))); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -71,6 +72,7 @@ public class TelaUsuário extends javax.swing.JFrame {
         );
 
         cadbookButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cadbookButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/jornal (2).png"))); // NOI18N
         cadbookButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cadbookButtonActionPerformed(evt);
@@ -97,6 +99,7 @@ public class TelaUsuário extends javax.swing.JFrame {
         );
 
         RateButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        RateButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/icons8-estrela-64.png"))); // NOI18N
         RateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RateButtonActionPerformed(evt);
@@ -135,9 +138,11 @@ public class TelaUsuário extends javax.swing.JFrame {
         jTextField3.setText("Avaliar");
 
         jButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/icons8-seta-longa-à-direita-15 (1).png"))); // NOI18N
         jButton4.setText("Próximo");
 
         jButton5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/icons8-retornar-15 (1).png"))); // NOI18N
         jButton5.setText("Voltar");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
