@@ -87,6 +87,7 @@ public class Cadastro extends javax.swing.JFrame {
         botão1Criar.setText("Criar");
 
         botao2Voltar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        botao2Voltar.setIcon(new javax.swing.ImageIcon("C:\\Users\\ROSEMARYAUGUSTO\\Downloads\\icons8-retornar-15.png")); // NOI18N
         botao2Voltar.setText("Voltar");
         botao2Voltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

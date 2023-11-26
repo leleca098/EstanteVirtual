@@ -45,6 +45,7 @@ public class TelaUsuário extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ROSEMARYAUGUSTO\\Downloads\\livros.png")); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -71,6 +72,7 @@ public class TelaUsuário extends javax.swing.JFrame {
         );
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ROSEMARYAUGUSTO\\Downloads\\jornal (2).png")); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -97,6 +99,7 @@ public class TelaUsuário extends javax.swing.JFrame {
         );
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ROSEMARYAUGUSTO\\Downloads\\icons8-estrela-64.png")); // NOI18N
 
         jDesktopPane3.setLayer(jButton2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -130,9 +133,11 @@ public class TelaUsuário extends javax.swing.JFrame {
         jTextField3.setText("Avaliar");
 
         jButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ROSEMARYAUGUSTO\\Downloads\\icons8-seta-longa-à-direita-15 (1).png")); // NOI18N
         jButton4.setText("Próximo");
 
         jButton5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ROSEMARYAUGUSTO\\Downloads\\icons8-retornar-15 (1).png")); // NOI18N
         jButton5.setText("Voltar");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
