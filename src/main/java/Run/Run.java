@@ -19,10 +19,15 @@ public class Run {
     public static void main(String[] args) throws Exception{
         Properties properties = new Properties();
         properties.load(new FileInputStream(new File("conf.properties")));
+
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Login(properties).setVisible(true);
+
             }
+
+
         });
     }
 }

@@ -186,7 +186,7 @@ public class TelaAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        Login login = new Login();
+        Login login = new Login(null); // Só por enquanto
         login.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed

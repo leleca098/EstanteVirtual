@@ -23,9 +23,10 @@ public class Cadastro extends javax.swing.JFrame {
         initComponents();
        
     }
-        public Cadastro(java.util.Properties properties){
+    public Cadastro(java.util.Properties properties){
         this();
         this.properties = properties;
+        
     }
 
     /**
@@ -244,11 +245,17 @@ public class Cadastro extends javax.swing.JFrame {
         String senha = passwordField.getText();
 
         // Criar um objeto Cad_user com os dados inseridos
+             System.out.println("aaa: ");
+             System.out.println(properties);
+             System.exit(1);
         Cad_user novoUsuario = new Cad_user(cpf, nome, email, idade, sexo, senha);
-
+             System.out.println(properties);
         // Enviar dados para o banco de dados usando a classe Cad_userDAO
         Cad_userDAO cadUserDAO = new Cad_userDAO(properties); // Substitua com a instância correta de Properties
         cadUserDAO.cadastrarUsuario(novoUsuario);
+            System.out.println("Properties atual: ");
+            System.out.println(properties);
+            System.exit(1);
 
         // Limpar os campos do formulário após o cadastro bem-sucedido
         cpfTextField.setText("");

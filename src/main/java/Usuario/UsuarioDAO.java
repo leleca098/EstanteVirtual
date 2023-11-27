@@ -14,10 +14,15 @@ public class UsuarioDAO {
     
     public UsuarioDAO(Properties properties){
         this.properties = properties;
+        System.out.println("torneras");
+                System.out.println(this.properties);
+
     }
     
     public Usuario existe(Usuario u) throws Exception{
         //1. Construir uma fábrica de conexões
+        System.out.println("torneras");
+                System.out.println(this.properties);
         var fabrica = new Conexao(properties);
         //2. Estabelecer uma conexão com o banco
         try(var conexao = fabrica.conectar()){

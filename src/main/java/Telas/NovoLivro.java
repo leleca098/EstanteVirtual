@@ -20,7 +20,7 @@ public class NovoLivro extends javax.swing.JFrame {
     public NovoLivro() {
         initComponents();
     }
-    
+
     public NovoLivro(java.util.Properties properties){
         this();
         this.properties = properties;
@@ -47,8 +47,6 @@ public class NovoLivro extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         idTextField = new javax.swing.JTextField();
         salvarButton = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAutoRequestFocus(false);
@@ -102,63 +100,45 @@ public class NovoLivro extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens2/icons8-estrela-15.png"))); // NOI18N
-        jLabel4.setText("Nota");
-        jLabel4.setToolTipText("");
-
-        jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(salvarButton))
+                    .addComponent(jLabel1)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel5))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(173, 173, 173)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel2)
-                                            .addComponent(jLabel5))
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(173, 173, 173)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(tituloTextField)
-                                                    .addComponent(autorTextField)))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(idTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                        .addGap(4, 4, 4)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel3)
-                                            .addComponent(jLabel4))
-                                        .addGap(88, 88, 88)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(publiTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 80, Short.MAX_VALUE)))
+                                            .addComponent(tituloTextField)
+                                            .addComponent(autorTextField)))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(idTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addGap(4, 4, 4)
+                                .addComponent(jLabel3)
+                                .addGap(88, 88, 88)
+                                .addComponent(publiTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(86, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(salvarButton)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(salvarButton)
-                .addGap(17, 17, 17))
-            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -176,11 +156,9 @@ public class NovoLivro extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel3)
                     .addComponent(publiTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(43, 43, 43)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(49, 49, 49))
+                .addGap(73, 73, 73)
+                .addComponent(salvarButton)
+                .addGap(17, 17, 17))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -213,41 +191,42 @@ public class NovoLivro extends javax.swing.JFrame {
 
     private void salvarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvarButtonActionPerformed
         try {
-        // Obter os valores inseridos nos campos de texto
-        int id = Integer.parseInt(idTextField.getText());
-        String titulo = tituloTextField.getText();
-        String autor = autorTextField.getText();
+            // Obter os valores inseridos nos campos de texto
+            int id = Integer.parseInt(idTextField.getText());
+            String titulo = tituloTextField.getText();
+            String autor = autorTextField.getText();
 
-        // Verificar se o campo de lançamento é um número válido
-        int lancamento;
-        try {
-            lancamento = Integer.parseInt(publiTextField.getText());
-        } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(null, "Por favor, insira um ano de lançamento válido.");
-            return; // Saia do método se a conversão falhar
-        }
+            // Verificar se o campo de lançamento é um número válido
+            int lancamento = Integer.parseInt(publiTextField.getText());
 
-        // Verificar se os campos obrigatórios foram preenchidos
-        if (idTextField.getText().isEmpty() || titulo.isEmpty() || autor.isEmpty() || publiTextField.getText().isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos obrigatórios.");
-            return; // Saia do método se algum campo obrigatório estiver vazio
-        }
+            try {
+                Integer.valueOf(lancamento);
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Por favor, insira um ano de lançamento válido.");
+            }
 
-        // Criar um objeto Livro com os dados inseridos
-        Livro livro = new Livro(id, titulo, autor, lancamento,10);
-        //Adicionar novo livro
+            // Verificar se os campos obrigatórios foram preenchidos
+            if (idTextField.getText().isEmpty() || titulo.isEmpty() || autor.isEmpty() || publiTextField.getText().isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos obrigatórios.");
+                return; // Saia do método se algum campo obrigatório estiver vazio
+            }
 
-        // Enviar dados para o banco de dados usando a classe LivroDAO
-        LivroDAO livroDAO = new LivroDAO(properties); // Substitua com a instância correta de Properties
-        livroDAO.cadastrarLivro(livro);
+            // Criar um objeto Livro com os dados inseridos
+            // @TODO: tirar nota hardcoded
+            Livro livro = new Livro(id, titulo, autor, lancamento, 10);
 
-        // Limpar os campos do formulário após o cadastro bem-sucedido
-        idTextField.setText("");
-        tituloTextField.setText("");
-        autorTextField.setText("");
-        publiTextField.setText("");
+            // Enviar dados para o banco de dados usando a classe LivroDAO
 
-        JOptionPane.showMessageDialog(null, "Livro cadastrado com sucesso!");
+            LivroDAO livroDAO = new LivroDAO(properties); // Substitua com a instância correta de Properties
+            livroDAO.cadastrarLivro(livro);
+
+            // Limpar os campos do formulário após o cadastro bem-sucedido
+            idTextField.setText("");
+            tituloTextField.setText("");
+            autorTextField.setText("");
+            publiTextField.setText("");
+
+            JOptionPane.showMessageDialog(null, "Livro cadastrado com sucesso!");
     } catch (Exception e) {
         e.printStackTrace();
         JOptionPane.showMessageDialog(null, "Erro ao cadastrar Livro.");
@@ -294,11 +273,9 @@ public class NovoLivro extends javax.swing.JFrame {
     private javax.swing.JTextField autorTextField;
     private javax.swing.JTextField idTextField;
     private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField publiTextField;

@@ -11,11 +11,11 @@ import java.util.Properties;
  */
 public class LivroDAO {
     private Properties properties;
-    
+
     public LivroDAO(Properties properties) {
-    this.properties = properties;
-}
-        public void cadastrarLivro(Livro u) {
+        this.properties = properties;
+    }
+    public void cadastrarLivro(Livro u) {
         //1. Construir uma fábrica de conexões
         var fabrica = new Conexao(properties);
 
@@ -30,7 +30,7 @@ public class LivroDAO {
                 ps.setString(2, u.getTitulo());  // Substitua pelo método adequado para obter o valor de coluna2
                 ps.setString(3, u.getAutor());  // Substitua pelo método adequado para obter o valor de coluna3
                 ps.setInt(4, u.getLancamento());  // Substitua pelo método adequado para obter o valor de coluna4
-                //ps.setInt(5, u.getNota());  // Substitua pelo método adequado para obter o valor de coluna5
+                ps.setInt(5, 10);  // Substitua pelo método adequado para obter o valor de coluna5 coloquei hard coded, se virem
 
                 //5. Executar o comando
                 ps.executeUpdate();

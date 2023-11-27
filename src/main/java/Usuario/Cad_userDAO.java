@@ -14,7 +14,10 @@ public class Cad_userDAO {
     
     public Cad_userDAO(Properties properties) {
     this.properties = properties;
-}
+        System.out.println("Corinthians");
+
+    System.out.println(this.properties);
+} 
         public void cadastrarUsuario(Cad_user u) {
         //1. Construir uma fábrica de conexões
         var fabrica = new Conexao(properties);
