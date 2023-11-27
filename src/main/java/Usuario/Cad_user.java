@@ -4,14 +4,12 @@
  */
 package Usuario;
 
-
-
 /**
  *
  * @author erick
  */
 public class Cad_user {
-    private int cpf;
+    private String cpf;
     private String nome;
     private String email;
     private int idade;
@@ -19,7 +17,7 @@ public class Cad_user {
     private String senha;
     
     
-    public Cad_user(int cpf, String nome, String email, int idade, String sexo, String senha) {
+    public Cad_user(String cpf, String nome, String email, int idade, String sexo, String senha) {
  this.cpf = cpf;
  this.nome = nome;
  this.email = email;
@@ -27,10 +25,10 @@ public class Cad_user {
  this.sexo = sexo;
  this.senha = senha;
  }
- public int getCpf() {
+ public String getCpf() {
  return cpf;
  }
- public void setCpf(int cpf) {
+ public void setCpf(String cpf) {
  this.cpf = cpf;
  }
  

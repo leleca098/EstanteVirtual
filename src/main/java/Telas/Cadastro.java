@@ -4,8 +4,6 @@ package Telas;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-
-
 import Usuario.Cad_user;
 import Usuario.Cad_userDAO;
 import java.util.Properties;
@@ -214,18 +212,20 @@ public class Cadastro extends javax.swing.JFrame {
     }//GEN-LAST:event_passwordFieldActionPerformed
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        TelaAdmin telaAdmin = new TelaAdmin();
-        telaAdmin.setVisible(true);
+        Login login = new Login(properties);
+        login.setVisible(true);
         dispose(); 
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void criarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_criarButtonActionPerformed
          try {
         // Obter os valores inseridos nos campos de texto
-        int cpf = Integer.parseInt(cpfTextField.getText());
+        String cpf = cpfTextField.getText();
         String nome = nomeTextField.getText();
         String email = emailTextField.getText();
-
+        String sexo = (String) sexoComboBox.getSelectedItem(); // Obter o item selecionado no JComboBox
+        String senha = passwordField.getText();
+        
         // Verificar se a idade é um número válido
         int idade;
         try {
@@ -241,21 +241,17 @@ public class Cadastro extends javax.swing.JFrame {
             return; // Saia do método se algum campo obrigatório estiver vazio
         }
 
-        String sexo = (String) sexoComboBox.getSelectedItem(); // Obter o item selecionado no JComboBox
-        String senha = passwordField.getText();
+        
 
-        // Criar um objeto Cad_user com os dados inseridos
-             System.out.println("aaa: ");
-             System.out.println(properties);
-             System.exit(1);
-        Cad_user novoUsuario = new Cad_user(cpf, nome, email, idade, sexo, senha);
-             System.out.println(properties);
-        // Enviar dados para o banco de dados usando a classe Cad_userDAO
-        Cad_userDAO cadUserDAO = new Cad_userDAO(properties); // Substitua com a instância correta de Properties
-        cadUserDAO.cadastrarUsuario(novoUsuario);
-            System.out.println("Properties atual: ");
-            System.out.println(properties);
-            System.exit(1);
+        Cad_user cad_user = new Cad_user(cpf, nome, email, idade, sexo, senha);
+
+            // Enviar dados para o banco de dados usando a classe Cad_userDAO
+            Properties properties = new Properties();
+            Cad_userDAO cad_userDAO = new Cad_userDAO(properties); // Substitua com a instância correta de Properties
+            
+            
+            cad_userDAO.cadastrarUsuario(cad_user);
+
 
         // Limpar os campos do formulário após o cadastro bem-sucedido
         cpfTextField.setText("");

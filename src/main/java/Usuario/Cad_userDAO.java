@@ -13,7 +13,7 @@ public class Cad_userDAO {
     private Properties properties;
     
     public Cad_userDAO(Properties properties) {
-    this.properties = properties;
+        this.properties = properties;
         System.out.println("Corinthians");
 
     System.out.println(this.properties);
@@ -29,7 +29,7 @@ public class Cad_userDAO {
 
             //4. Substituir os eventuais placeholders
             try (var ps = conexao.prepareStatement(INSERT_QUERY)) {
-                ps.setInt(1, u.getCpf());  // Substitua pelo método adequado para obter o valor de coluna1
+                ps.setString(1, u.getCpf());  // Substitua pelo método adequado para obter o valor de coluna1
                 ps.setString(2, u.getNome());  // Substitua pelo método adequado para obter o valor de coluna2
                 ps.setString(3, u.getEmail());  // Substitua pelo método adequado para obter o valor de coluna3
                 ps.setInt(4, u.getIdade());  // Substitua pelo método adequado para obter o valor de coluna1
@@ -48,10 +48,3 @@ public class Cad_userDAO {
         }
     }
 }
-   
-    
-   
-        
-    
-
-
