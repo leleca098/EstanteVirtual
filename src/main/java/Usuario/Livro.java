@@ -13,7 +13,7 @@ public class Livro {
     private String titulo;
     private String autor;
     private int lancamento;
-  //  private int nota;
+    private int nota;
 
     public Livro(int id, String titulo, String autor, int lançamento, int nota) {
 this.id = id;
