@@ -212,11 +212,11 @@ public class NovoLivro extends javax.swing.JFrame {
         }
 
         // Criar um objeto Livro com os dados inseridos
-        Livro livro = new Livro(id, titulo, autor, lancamento,);
+        Livro livro = new Livro(id, titulo, autor, lancamento);
 
         // Enviar dados para o banco de dados usando a classe LivroDAO
         LivroDAO livroDAO = new LivroDAO(properties); // Substitua com a instância correta de Properties
-        livroDAO.cadastrarLivro(novoLivro);
+        livroDAO.cadastrarLivro(livro);
 
         // Limpar os campos do formulário após o cadastro bem-sucedido
         idTextField.setText("");
