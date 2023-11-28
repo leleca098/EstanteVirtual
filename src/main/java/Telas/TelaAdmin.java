@@ -5,17 +5,26 @@ package Telas;
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
+import java.util.Properties;
 /**
  *
  * @author ROSEMARYAUGUSTO
  */
 public class TelaAdmin extends javax.swing.JFrame {
+            private Properties properties;
 
+            
     /**
      * Creates new form TelaAdmin
      */
     public TelaAdmin() {
         initComponents();
+    }
+
+    public TelaAdmin(java.util.Properties properties){
+        this();
+        this.properties = properties;
+        
     }
 
     /**
@@ -175,7 +184,7 @@ public class TelaAdmin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cadButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadButtonActionPerformed
-    Cadastro cadastro = new Cadastro();
+    Cadastro cadastro = new Cadastro(properties);
     cadastro.setVisible(true);
     this.dispose();
 

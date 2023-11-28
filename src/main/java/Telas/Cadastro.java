@@ -246,7 +246,7 @@ public class Cadastro extends javax.swing.JFrame {
         Cad_user cad_user = new Cad_user(cpf, nome, email, idade, sexo, senha);
 
             // Enviar dados para o banco de dados usando a classe Cad_userDAO
-            Properties properties = new Properties();
+            //Properties properties = new Properties();
             Cad_userDAO cad_userDAO = new Cad_userDAO(properties); // Substitua com a instância correta de Properties
             
             

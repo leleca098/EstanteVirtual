@@ -223,7 +223,7 @@ public class Login extends javax.swing.JFrame {
             if ("admin".equals(login) && "admin".equals(senha)) {
                 JOptionPane.showMessageDialog(null, "Bem vindo");
                 // Redirecione para a TelaAdmin
-                var telaAdmin = new TelaAdmin();
+                var telaAdmin = new TelaAdmin(properties);
                 telaAdmin.setVisible(true);
                 dispose(); // Feche a tela atual, se necessário
             }else
