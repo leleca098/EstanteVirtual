@@ -13,14 +13,16 @@ public class Livro {
     private String titulo;
     private String autor;
     private int lancamento;
-   // private int nota;
+    private String genero;
+    private String nota;
 
-    public Livro(int id, String titulo, String autor, int lançamento, int nota) {
+    public Livro(int id, String titulo, String autor, int lançamento, String genero, String nota) {
 this.id = id;
 this.titulo = titulo;
 this.autor = autor;
 this.lancamento = lançamento;
-//this.nota = nota;
+this.genero = genero;
+this.nota = nota;
 }
 public int getId() {
  return id;
@@ -46,11 +48,16 @@ public String getAutor() {
  public void setLancamento(int lancamento) {
  this.lancamento = lancamento;
  }
-/*public int getNota() {
- return nota;
+public String getGenero() {
+ return genero;
  }
- public void setNota(int nota) {
+ public void setGenero(String nota) {
  this.nota = nota;
  }
-*/
+public String getNota() {
+ return nota;
+ }
+ public void setNota(String nota) {
+ this.nota = nota;
+ }
 }

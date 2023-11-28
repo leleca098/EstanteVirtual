@@ -15,15 +15,19 @@ public class Cad_user {
     private int idade;
     private String sexo;
     private String senha;
+    private String gen1;
+    private String gen2;
     
     
-    public Cad_user(String cpf, String nome, String email, int idade, String sexo, String senha) {
+    public Cad_user(String cpf, String nome, String email, int idade, String sexo, String senha, String gen1, String gen2) {
  this.cpf = cpf;
  this.nome = nome;
  this.email = email;
  this.idade = idade;
  this.sexo = sexo;
  this.senha = senha;
+ this.gen1 = gen1;
+ this.gen2 = gen2;
  }
  public String getCpf() {
  return cpf;
@@ -61,5 +65,17 @@ public String getNome() {
  }
  public void setSenha(String senha) {
  this.senha = senha;
+ }
+ public String getGen1() {
+ return gen1;
+ }
+ public void setGen1(String gen1) {
+ this.gen1 = gen1;
+ }
+ public String getGen2() {
+ return gen2;
+ }
+ public void setGen2(String gen2) {
+ this.gen2 = gen2;
  }
 }

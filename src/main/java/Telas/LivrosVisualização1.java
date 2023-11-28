@@ -8,12 +8,12 @@ package Telas;
  *
  * @author ROSEMARYAUGUSTO
  */
-public class LivrosVisualização extends javax.swing.JFrame {
+public class LivrosVisualização1 extends javax.swing.JFrame {
 
     /**
      * Creates new form LivrosVisualização
      */
-    public LivrosVisualização() {
+    public LivrosVisualização1() {
         initComponents();
     }
 
@@ -76,9 +76,10 @@ public class LivrosVisualização extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        TelaUsuário telaUsuário = new TelaUsuário(null);
-        telaUsuário.setVisible(true);
+        TelaAdmin telaAdmin = new TelaAdmin();
+        telaAdmin.setVisible(true);
         this.dispose();
+
     }//GEN-LAST:event_backButtonActionPerformed
 
     /**
@@ -98,20 +99,21 @@ public class LivrosVisualização extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LivrosVisualização.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LivrosVisualização1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LivrosVisualização.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LivrosVisualização1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LivrosVisualização.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LivrosVisualização1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LivrosVisualização.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LivrosVisualização1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LivrosVisualização().setVisible(true);
+                new LivrosVisualização1().setVisible(true);
             }
         });
     }

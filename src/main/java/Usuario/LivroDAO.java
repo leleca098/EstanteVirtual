@@ -22,7 +22,7 @@ public class LivroDAO {
         //2. Estabelecer uma conexão com o banco
         try (var conexao = fabrica.conectar()) {
             //3. Especificar o comando SQL
-            String INSERT_QUERY = "INSERT INTO livro VALUES (?, ?, ?, ?, ?)";
+            String INSERT_QUERY = "INSERT INTO livro VALUES (?, ?, ?, ?, ?, ?)";
 
             //4. Substituir os eventuais placeholders
             try (var ps = conexao.prepareStatement(INSERT_QUERY)) {
@@ -30,8 +30,9 @@ public class LivroDAO {
                 ps.setString(2, u.getTitulo());  // Substitua pelo método adequado para obter o valor de coluna2
                 ps.setString(3, u.getAutor());  // Substitua pelo método adequado para obter o valor de coluna3
                 ps.setInt(4, u.getLancamento());  // Substitua pelo método adequado para obter o valor de coluna4
-                ps.setInt(5, 10);  // Substitua pelo método adequado para obter o valor de coluna5 coloquei hard coded, se virem
-
+                ps.setString(5,u.getGenero());
+                ps.setString(6, u.getNota());  // Substitua pelo método adequado para obter o valor de coluna5 coloquei hard coded, se virem
+                
                 //5. Executar o comando
                 ps.executeUpdate();
             } catch (Exception e) {

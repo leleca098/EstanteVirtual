@@ -25,7 +25,7 @@ public class Cad_userDAO {
         //2. Estabelecer uma conexão com o banco
         try (var conexao = fabrica.conectar()) {
             //3. Especificar o comando SQL
-            String INSERT_QUERY = "INSERT INTO usuario VALUES (?, ?, ?, ?, ?, ?)";
+            String INSERT_QUERY = "INSERT INTO usuario VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
             //4. Substituir os eventuais placeholders
             try (var ps = conexao.prepareStatement(INSERT_QUERY)) {
@@ -35,6 +35,8 @@ public class Cad_userDAO {
                 ps.setInt(4, u.getIdade());  // Substitua pelo método adequado para obter o valor de coluna1
                 ps.setString(5, u.getSexo());  // Substitua pelo método adequado para obter o valor de coluna2
                 ps.setString(6, u.getSenha());  // Substitua pelo método adequado para obter o valor de coluna3
+                ps.setString(7, u.getGen1());
+                ps.setString(8, u.getGen2());
 
                 //5. Executar o comando
                 ps.executeUpdate();

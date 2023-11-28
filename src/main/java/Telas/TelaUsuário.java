@@ -219,7 +219,9 @@ public class TelaUsuário extends javax.swing.JFrame {
     }//GEN-LAST:event_cadbookButtonActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        LivrosVisualização livrosVisualização = new LivrosVisualização();
+        livrosVisualização.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void RateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RateButtonActionPerformed

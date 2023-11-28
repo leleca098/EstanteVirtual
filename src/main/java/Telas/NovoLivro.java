@@ -47,10 +47,10 @@ public class NovoLivro extends javax.swing.JFrame {
         idTextField = new javax.swing.JTextField();
         salvarButton = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        notaComboBox = new javax.swing.JComboBox<>();
         jButton2 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        genComboBox = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAutoRequestFocus(false);
@@ -101,8 +101,8 @@ public class NovoLivro extends javax.swing.JFrame {
         jLabel4.setText("Nota");
         jLabel4.setToolTipText("");
 
-        jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
+        notaComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        notaComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-voltar-15 (1).png"))); // NOI18N
@@ -117,8 +117,8 @@ public class NovoLivro extends javax.swing.JFrame {
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-romance-15.png"))); // NOI18N
         jLabel6.setText("Gênero");
 
-        jComboBox2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Romance", "Ficção", "Técnico" }));
+        genComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        genComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Romance", "Ficção", "Técnico" }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -140,7 +140,7 @@ public class NovoLivro extends javax.swing.JFrame {
                                 .addGap(82, 82, 82)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(publiTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)
-                                    .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                    .addComponent(notaComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel1Layout.createSequentialGroup()
                                     .addComponent(jLabel2)
@@ -154,7 +154,7 @@ public class NovoLivro extends javax.swing.JFrame {
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(tituloTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)
-                                        .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))))
+                                        .addComponent(genComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))))
                 .addContainerGap(126, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -174,7 +174,7 @@ public class NovoLivro extends javax.swing.JFrame {
                     .addComponent(tituloTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(44, 44, 44)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(genComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -187,7 +187,7 @@ public class NovoLivro extends javax.swing.JFrame {
                 .addGap(43, 43, 43)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(notaComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -222,6 +222,9 @@ public class NovoLivro extends javax.swing.JFrame {
             int id = Integer.parseInt(idTextField.getText());
             String titulo = tituloTextField.getText();
             String autor = autorTextField.getText();
+            String genero = (String) genComboBox.getSelectedItem();
+            String nota = (String) (notaComboBox.getSelectedItem());
+            
 
             // Verificar se o campo de lançamento é um número válido
             int lancamento = Integer.parseInt(publiTextField.getText());
@@ -233,14 +236,14 @@ public class NovoLivro extends javax.swing.JFrame {
             }
 
             // Verificar se os campos obrigatórios foram preenchidos
-            if (idTextField.getText().isEmpty() || titulo.isEmpty() || autor.isEmpty() || publiTextField.getText().isEmpty()) {
+            if (idTextField.getText().isEmpty() || titulo.isEmpty() || autor.isEmpty() || publiTextField.getText().isEmpty() ) {
                 JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos obrigatórios.");
                 return; // Saia do método se algum campo obrigatório estiver vazio
             }
 
             // Criar um objeto Livro com os dados inseridos
             // @TODO: tirar nota hardcoded
-            Livro livro = new Livro(id, titulo, autor, lancamento, 10);
+            Livro livro = new Livro(id, titulo, autor, lancamento, genero, nota);
 
             // Enviar dados para o banco de dados usando a classe LivroDAO
 
@@ -304,10 +307,9 @@ public class NovoLivro extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField autorTextField;
+    private javax.swing.JComboBox<String> genComboBox;
     private javax.swing.JTextField idTextField;
     private javax.swing.JButton jButton2;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -315,6 +317,7 @@ public class NovoLivro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JComboBox<String> notaComboBox;
     private javax.swing.JTextField publiTextField;
     private javax.swing.JButton salvarButton;
     private javax.swing.JTextField tituloTextField;
